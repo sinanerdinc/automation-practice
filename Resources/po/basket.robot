@@ -47,4 +47,5 @@ confirm the order
 
 get reference code
     ${text} =  utils.find text  xpath=//div[@id="center_column"]//div
-    ${reference_code} =  base_helper.find reference code  ${text}
+    ${code} =  base_helper.find reference code  ${text}
+    Set Suite Variable  ${reference_code}  ${code}

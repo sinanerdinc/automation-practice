@@ -11,3 +11,6 @@ close session
 
 debugger
     utils.debugger
+
+generate test datas
+    utils.generate fake email

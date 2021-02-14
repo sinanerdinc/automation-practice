@@ -1,6 +1,8 @@
 *** Settings ***
 Library  SeleniumLibrary
 Library  DebugLibrary
+Library  FakerLibrary
+Library  Collections
 
 *** Variables ***
 ${browser}  chrome
@@ -56,8 +58,7 @@ find text
     END
     [Return]  ${result}
 
-get element attribute
-    [Arguments]  ${selector}  ${attrs}
-    Wait Until Page Contains Element  ${selector}  ${TIMEOUT}
-    ${result} =  Get Element Attribute  ${selector}  ${attrs}
-    [Return]  ${result}
+generate fake email
+    ${email} =  FakerLibrary.Email
+    #Set Suite Variable  ${user}[email]  ${email}
+    Set To Dictionary  ${user}  email=${email}

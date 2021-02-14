@@ -9,6 +9,7 @@ Test Teardown  utilsApp.close session
 
 *** Test Cases ***
 Demo Test Cases
+    utilsApp.generate test datas
     homepageApp.go to homepage
     homepageApp.click sign in button
     loginApp.create an account  ${user}
@@ -26,5 +27,3 @@ Demo Test Cases
     basketApp.click proceed to checkout button in the shipping
     basketApp.confirm order with bank wire
     loginApp.verify order history
-
-
