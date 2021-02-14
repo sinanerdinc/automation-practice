@@ -44,16 +44,6 @@ input
         Sleep  ${i}  wait for a input
     END
 
-select by label
-    [Arguments]  ${selector}  ${text}
-    FOR	 ${i}  IN RANGE  1  ${MAX_TRY}
-        wait until page contains element  ${selector}
-        ${input_status} =  Run Keyword And Return Status  Select From List By Label  ${selector}  ${text}
-        Exit For Loop If  '${input_status}' == 'True'
-        Sleep  ${i}  wait for a input
-    END
-
-
 find text
     [Arguments]  ${selector}
     FOR	 ${i}  IN RANGE  1  ${MAX_TRY}
