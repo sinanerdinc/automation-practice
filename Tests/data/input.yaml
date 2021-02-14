@@ -1,0 +1,23 @@
+user:
+  email: "sinan103@loremipsum.com"
+  gender: "Mr"
+  first_name: "Sinan"
+  last_name: "Erdinc"
+  password: "Test123"
+  birth_data: "12"
+  birth_month: "5"
+  birth_year: "2000"
+
+address:
+  address: "Lorem ipsum dolar sit amet custom."
+  city: "istanbul"
+  state: "California"
+  postcode: "71345"
+  mobile_phone: "+905554443322"
+
+category:
+    main: "Dresses"
+    sub: "Summer Dresses"
+
+search:
+    param: "Summer"
