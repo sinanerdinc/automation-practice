@@ -71,11 +71,11 @@ fill mobile phone
 
 click register button
     utils.click  id=submitAccount
-    Wait Until Location Is  http://automationpractice.com/index.php?controller=my-account
+    Wait Until Location Is  ${base}[homepage]/index.php?controller=my-account
     Wait Until Page Contains  Welcome to your account. Here you can manage all of your personal information and orders.
 
 go to order history page
-    utils.go  http://automationpractice.com/index.php?controller=history
+    utils.go  ${base}[homepage]/index.php?controller=history
 
 get reference code
     ${result} =  utils.find text  xpath=//a[@class="color-myaccount"]

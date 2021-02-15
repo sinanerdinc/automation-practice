@@ -1,3 +1,6 @@
+base:
+  homepage: "http://automationpractice.com"
+
 user:
   gender: "Mr"
   first_name: "Sinan"

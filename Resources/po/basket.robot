@@ -9,7 +9,7 @@ ${reference_code}
 
 *** Keywords ***
 go to cart page
-    utils.go  http://automationpractice.com/index.php?controller=order
+    utils.go  ${base}[homepage]/index.php?controller=order
 
 verify product in the basket
     [Arguments]  ${product_name}

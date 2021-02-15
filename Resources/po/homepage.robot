@@ -4,7 +4,7 @@ Resource  ./utils.robot
 
 *** Keywords ***
 go to homepage
-    utils.go  http://automationpractice.com
+    utils.go  ${base}[homepage]
     wait until element is visible  id=footer
 
 click sign in button
